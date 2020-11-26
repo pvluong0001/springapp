@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:10111/demodb
+    username: root
+    password: password
+  # fly way configure
+  flyway:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:10111/demodb
+    password: password
+    user: root
+server:
+  port: 11111
